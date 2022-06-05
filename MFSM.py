@@ -55,7 +55,7 @@ class Trans(object):
         self.states.append(name)
 
     def visualize(self):
-        res = ["digraph moore_finite_state_machine {",
+        res = ["digraph finite_state_machine {",
                " rankdir=LR;", " node [shape = circle];"]
 
         for state_name, state in self.state_dict.items():
