@@ -18,6 +18,9 @@ This is an example project which demonstrates Moore finite state structure and n
 
 ## Changelog
 
+- 06.05.2022 - 2
+  - add test_MFSM.py
+  - add local checker
 - 06.05.2022 - 1
   - add MFSM.py
   - update README.md
