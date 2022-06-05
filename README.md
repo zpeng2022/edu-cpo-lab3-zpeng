@@ -5,7 +5,7 @@ This is an example project which demonstrates Moore finite state structure and n
 ## Project structure
 
 - `MFSM.py` -- implementation of `Moore finite state` class
-- `test_MFSM.py` -- tests for Moore finite state machine 
+- `test_MFSM.py` -- tests for Moore finite state machine
 - `localcheck.bash` -- check codestyle and typical python error
 - on a local machine
 

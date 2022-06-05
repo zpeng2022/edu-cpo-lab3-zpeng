@@ -55,7 +55,8 @@ class Trans(object):
         index = len(series)
         # print("index: " + str(index))
         result = initial_output
-        state = self.set_initial_state(initial_state, series, 0, initial_output)
+        state = self.set_initial_state(initial_state,
+                                       series, 0, initial_output)
         events = []
         self.state_history = [(clock, copy.copy(state))]
 
@@ -74,12 +75,3 @@ class Trans(object):
         if limit == 0:
             print("limit reached!")
         return result
-
-
-
-
-
-
-
-
-
