@@ -1,4 +1,4 @@
-from collections import OrderedDict, namedtuple
+from collections import namedtuple
 import copy
 
 event = namedtuple("event", "clock, from_state, to_state, input, pos, output")

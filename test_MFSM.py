@@ -24,8 +24,9 @@ class MFSMTest(unittest.TestCase):
         FSM.add("H1", state_table(1, "I", 0))
         FSM.add("I0", state_table(0, "I", 1))
         FSM.add("I1", state_table(1, "I", 1))
-
-        print(FSM.state_history)
+        
+        FSM.run("A", "0", "10101010")
+        # print(FSM.state_history)
 
         self.assertListEqual(FSM.event_history,[
          event(clock=1, from_state='A', to_state='B', input='10101010', pos=1, output='00'),
