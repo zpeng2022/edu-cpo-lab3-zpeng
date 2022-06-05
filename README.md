@@ -1,4 +1,4 @@
-# slay_the_dragon - lab #2 - variant 2
+# slay_the_dragon - lab #3 - variant 4
 
 This is an example project which demonstrates Moore finite state structure and necessary
 
