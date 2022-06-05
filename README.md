@@ -11,6 +11,8 @@ This is an example project which demonstrates Moore finite state structure and n
 
 ## Features
 
+- add test_FSM
+
 ## Contribution
 
 - Zhan,Peng (zpeng@hdu.edu.cn) -- write the main class part.
