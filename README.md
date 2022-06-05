@@ -12,6 +12,8 @@ This is an example project which demonstrates Moore finite state structure and n
 ## Features
 
 - add test_FSM
+- add test_elevator_example
+- add test_visual
 
 ## Contribution
 
@@ -20,6 +22,8 @@ This is an example project which demonstrates Moore finite state structure and n
 
 ## Changelog
 
+- 06.05.2022 - 3
+  - add visualize for moore finite machine
 - 06.05.2022 - 2
   - add test_MFSM.py
   - add local checker

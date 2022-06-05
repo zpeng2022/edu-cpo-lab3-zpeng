@@ -13,6 +13,7 @@ def name_helper(name, index):
 class Trans(object):
     def __init__(self, name):
         self.name = name
+        self.states = []
         self.state_dict = {}
         self.state_history = []
         self.event_history = []
@@ -49,6 +50,23 @@ class Trans(object):
 
     def add(self, name, table):
         self.state_dict[name] = table
+
+    def add_state(self, name):
+        self.states.append(name)
+
+    def visualize(self):
+        res = ["digraph moore_finite_state_machine {",
+               " rankdir=LR;", " node [shape = circle];"]
+
+        for state_name, state in self.state_dict.items():
+            name = state_name[0]
+            input = state[0]
+            next_state = state[1]
+            res.append(" {} -> {} [label = '{}'];".format(
+                name, next_state, input))
+
+        res.append("}")
+        return "\n".join(res)
 
     def run(self, initial_state, initial_output, series, limit=100):
         clock = 0
