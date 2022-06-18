@@ -31,6 +31,37 @@ This is an example project which demonstrates Moore finite state structure and n
   - add MFSM.py
   - update README.md
 
+
+## Show Graphviz
+```graphviz
+digraph finite_state_machine {
+    fontname="Helvetica,Arial,sans-serif"
+    node [fontname="Helvetica,Arial,sans-serif"]
+    edge [fontname="Helvetica,Arial,sans-serif"]
+    rankdir=LR;
+    node [shape = doublecircle]; A I;
+    node [shape = circle];
+    A -> D [label = "0"];
+    A -> B [label = "1"];
+    B -> E [label = "1"];
+    B -> C [label = "1"];
+    C -> F [label = "0"];
+    C -> C [label = "1"];
+    D -> G [label = "0"];
+    D -> E [label = "1"];
+    E -> H [label = "0"];
+    E -> F [label = "1"];
+    F -> I [label = "0"];
+    F -> F [label = "1"];
+    G -> G [label = "0"];
+    G -> H [label = "1"];
+    H -> H [label = "0"];
+    H -> I [label = "1"];
+    I -> I [label = "0"];
+    I -> I [label = "1"];
+}
+```
+
 ## Design notes
 
 - Advantages of unit testing:
