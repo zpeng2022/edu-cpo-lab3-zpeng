@@ -14,6 +14,7 @@ This is an example project which demonstrates Moore finite state structure and n
 ## Features
 
 - add test_FSM
+- add test_FSM_from_table
 - add test_elevator_example
 - add test_visual
 
@@ -24,6 +25,8 @@ This is an example project which demonstrates Moore finite state structure and n
 
 ## Changelog
 
+- 18.06.2022 - 4
+  - add fsm_table.txt
 - 18.06.2022 - 3
   - add moore_fsm.gv
   - add moore_fsm.gv.pdf
