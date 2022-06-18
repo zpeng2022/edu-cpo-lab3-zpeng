@@ -37,6 +37,9 @@ This is an example project which demonstrates Moore finite state structure and n
 
 ## Show Graphviz
 
+- we use the python + grahviz to get 
+- the final image result,
+- and the result is in the moore_fsm.gv.pdf
 ```graphviz
 digraph finite_state_machine {
     fontname="Helvetica,Arial,sans-serif"
