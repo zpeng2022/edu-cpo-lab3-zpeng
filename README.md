@@ -22,6 +22,10 @@ This is an example project which demonstrates Moore finite state structure and n
 
 ## Changelog
 
+- 18.06.2022 - 3
+  - add moore_fsm.gv
+  - add moore_fsm.gv.pdf
+  - add add_graphviz.py
 - 06.05.2022 - 3
   - add visualize for moore finite machine
 - 06.05.2022 - 2
@@ -31,8 +35,8 @@ This is an example project which demonstrates Moore finite state structure and n
   - add MFSM.py
   - update README.md
 
-
 ## Show Graphviz
+
 ```graphviz
 digraph finite_state_machine {
     fontname="Helvetica,Arial,sans-serif"
