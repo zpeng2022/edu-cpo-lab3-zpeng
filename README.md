@@ -1,3 +1,5 @@
+[![Test Check](https://github.com/zpeng2022/edu-cpo-lab3-zpeng/actions/workflows/check.yml/badge.svg)](https://github.com/zpeng2022/edu-cpo-lab3-zpeng/actions/workflows/check.yml)
+
 # slay_the_dragon - lab #3 - variant 4
 
 This is an example project which demonstrates Moore finite state structure and necessary
