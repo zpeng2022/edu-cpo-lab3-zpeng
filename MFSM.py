@@ -51,6 +51,26 @@ class Trans(object):
     def add(self, name, table):
         self.state_dict[name] = table
 
+    def add_stats_from_table(self, filename):
+        table_file = open(filename, "r")
+        # FSM.add_state(tem)
+        result = table_file.readline()
+        states = result.split(' ')
+        for elem in states:
+            self.add_state(elem)
+
+        # FSM.add(d, state_table(a, b, c))
+        trans_state = table_file.readline()
+        while trans_state != "":
+            chunks = trans_state.split(' ')
+            self.add(chunks[0],
+                     state_table(int(chunks[1]),
+                                 chunks[2],
+                                 int(chunks[3])))
+            trans_state = table_file.readline()
+
+        table_file.close()
+
     def add_state(self, name):
         self.states.append(name)
 
