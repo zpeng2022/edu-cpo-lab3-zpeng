@@ -27,9 +27,9 @@ This is an example project which demonstrates Moore finite state structure and n
 ## Changelog
 
 - 20.06.2022 - 5
- - add types control by decorator
- - add tests for types control
- - add types control checker for functions
+  - add types control by decorator
+  - add tests for types control
+  - add types control checker for functions
 - 18.06.2022 - 4
   - add fsm_table.txt
 - 18.06.2022 - 3
