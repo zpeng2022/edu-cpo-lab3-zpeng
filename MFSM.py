@@ -10,6 +10,16 @@ def name_helper(name, index):
     return name + str(index)
 
 
+def arg_type(position, dataType):
+    def inner1(func):
+        def wrapper(*args, **kwargs):
+            if type(args[position]) != dataType:
+                print("Failed!")
+            return func(*args, **kwargs)
+        return wrapper
+    return inner1
+
+
 class Trans(object):
     def __init__(self, name):
         self.name = name
@@ -48,9 +58,11 @@ class Trans(object):
         state = current_state(name, input, pos, output)
         return state
 
+    @arg_type(1, str)
     def add(self, name, table):
         self.state_dict[name] = table
 
+    @arg_type(1, str)
     def add_stats_from_table(self, filename):
         table_file = open(filename, "r")
         # FSM.add_state(tem)
@@ -71,6 +83,7 @@ class Trans(object):
 
         table_file.close()
 
+    @arg_type(1, str)
     def add_state(self, name):
         self.states.append(name)
 
@@ -88,6 +101,7 @@ class Trans(object):
         res.append("}")
         return "\n".join(res)
 
+    @arg_type(3, str)
     def run(self, initial_state, initial_output, series, limit=100):
         clock = 0
         index = len(series)
