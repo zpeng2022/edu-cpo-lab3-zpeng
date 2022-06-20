@@ -1,8 +1,11 @@
 import unittest
-from MFSM import state_table, Trans, current_state, event
+from MFSM import state_table, Trans, current_state, event, name_helper
 
 
 class MFSMTest(unittest.TestCase):
+    def test_decorator(self):
+        name_helper("zpeng", 12)
+
     def test_FSM_from_table(self):
         FSM = Trans("Moore Infinite Machine")
 

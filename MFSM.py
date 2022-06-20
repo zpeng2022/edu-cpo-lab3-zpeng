@@ -6,10 +6,6 @@ current_state = namedtuple("current_state", "name, all_input, pos, output")
 state_table = namedtuple("state_table", "input next_state output")
 
 
-def name_helper(name, index):
-    return name + str(index)
-
-
 def arg_type(position, dataType):
     def inner1(func):
         def wrapper(*args, **kwargs):
@@ -18,6 +14,12 @@ def arg_type(position, dataType):
             return func(*args, **kwargs)
         return wrapper
     return inner1
+
+
+@arg_type(0, str)
+@arg_type(1, int)
+def name_helper(name, index):
+    return name + str(index)
 
 
 class Trans(object):
